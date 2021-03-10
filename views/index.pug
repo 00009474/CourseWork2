@@ -10,10 +10,10 @@ block container
           form(action="/add", method="POST")
             .form-group
               label(for='todo') Add your note:
-              input.form-control#todo(type='text', name="title")
-            input(type="submit", value="Add").btn.btn-primary.btn-block
+              input.form-control#todo(type='text', name='comment')
+            input(type="submit", value="Add").btn.btn-outline-success.btn-lg
     .col-md-8 
-      table.table
+      table.table.table-dark.table-striped
         thead
           tr
             th(scope='col') #
