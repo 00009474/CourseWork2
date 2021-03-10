@@ -6,7 +6,7 @@ const Todo = require('../models/Todo')
 
 const post_index = (req,res) => {
     const newTodo = new Todo ({
-        comment: req.body.comment
+        title: req.body.title
     })
     newTodo.save((err) => {
         if(err) console.log(err)

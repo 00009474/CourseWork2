@@ -1,6 +1,6 @@
 extends layout 
 
-block container
+block content
   .row 
     .col-md-4 
       .card 
@@ -10,7 +10,7 @@ block container
           form(action="/add", method="POST")
             .form-group
               label(for='todo') Add your note:
-              input.form-control#todo(type='text', name='comment')
+              input.form-control#todo(type='text', name="title")
             input(type="submit", value="Add").btn.btn-outline-success.btn-lg
     .col-md-8 
       table.table.table-dark.table-striped
