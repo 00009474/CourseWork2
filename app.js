@@ -17,7 +17,9 @@ mongoose.connect(dbSource, {useNewUrlParser: true, useUnifiedTopology: true})
 const indexRoutes = require('./routes/index')
 app.use ('/', indexRoutes)
 
-app.use (bodyParser.urlencoded({ extended: false }))
+app.use('/assets', express.static('./public'))
+
+app.use (bodyParser.urlencoded({ extended: true }))
 
 app.set('view engine', 'pug')
 

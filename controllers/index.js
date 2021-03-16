@@ -5,6 +5,7 @@ const getIndex = (req, res) => {
 const Todo = require('../models/Todo')
 
 const post_index = (req,res) => {
+    console.log(req)
     const newTodo = new Todo ({
         title: req.body.title
     })

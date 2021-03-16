@@ -8,7 +8,7 @@ block content
           h3 Add new note
         .card-body 
           form(action="/add", method="POST")
-            .form-group
+            .form-group.mb-3
               label(for='todo') Add your note:
               input.form-control#todo(type='text', name="title")
             input(type="submit", value="Add").btn.btn-outline-success.btn-lg
@@ -17,15 +17,15 @@ block content
         thead
           tr
             th(scope='col') #
-            th(scope='col') First
-            th(scope='col') Last
+            th(scope='col') ID
+            th(scope='col') Note
             th(scope='col') Handle
         tbody
           tr
             th(scope='row') 1
-            td Mark
-            td Otto
-            td @mdo
+            td Lorem
+            td Ipsum
+            td Dollor
           tr
             th(scope='row') 2
             td Jacob
